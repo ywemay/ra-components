@@ -1,4 +1,4 @@
-export const payments = [
+const values = [
   'ADV',
   'NET30',
   'NET60',
@@ -8,3 +8,5 @@ export const payments = [
   'LC',
   'INST',
 ].map(k => {return { id: k, name: `payments.terms.${k}`}});
+
+export const payments = values;

@@ -1,5 +1,5 @@
 import { SelectInput, useGetList, useLocaleState } from "react-admin";
-import { payments } from "@/components/choices/payments-terms";
+import { payments } from "../choices/payments-terms";
 
 export function PaymentTermSelectInput(props) {
   return <SelectInput

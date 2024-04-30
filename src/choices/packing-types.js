@@ -1,4 +1,4 @@
-export const packings = [
+const values = [
   'none',
   'polybag',
   'blister',
@@ -13,3 +13,5 @@ export const packings = [
   'combined',
   'other',
 ].map(k => {return { id: k, name: `packings.types.${k}`}});
+
+export const packings = values;

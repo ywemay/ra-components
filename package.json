@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React Admin Components",
   "type": "module",
-  "main": "src/index.jsx",
+  "main": "src/index.js",
   "repository": "https://github.com/ywemay/ra-components.git",
   "author": "Chibuc Dorin",
   "license": "MIT",

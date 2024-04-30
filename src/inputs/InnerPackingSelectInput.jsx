@@ -1,5 +1,5 @@
 import { SelectInput } from "react-admin";
-import { packings } from "@/components/choices/packing-types";
+import { packings } from "../choices/packing-types";
 
 export function InnerPackingSelectInput(props) {
   return <SelectInput

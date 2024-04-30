@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { useRecordContext, ImageInput } from "react-admin"
 import { useFormContext } from "react-hook-form";
 import { doFetch } from "../lib";
-import { ImageField } from '@/components/fields'
+import { ImageField } from '../fields'
 
 const { VITE_API_FILES_HOST: host } = import.meta.env;
 

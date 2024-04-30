@@ -1,6 +1,7 @@
 export * from './DateField.jsx'
 export * from './DescriptionField.jsx'
 export * from './IDField.jsx'
+export * from './ImagesField.jsx'
 export * from './IncotermField.jsx'
 export * from './IncotermPortField.jsx'
 export * from './MinQuantityField.jsx'
