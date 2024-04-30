@@ -1,0 +1,17 @@
+export const units = [
+  'pc',
+  'set',
+  'doz',
+  'kg',
+  'g',
+  'mg',
+  'lb',
+  'oz',
+  'm',
+  'cm',
+  'mm',
+  'km',
+  'in',
+  'ft',
+  'mi',
+].map(k => {return { id: k, name: `mu.${k}`}});

@@ -1,0 +1,13 @@
+.additional-buttons .RaCreateButton-floating {
+  position: relative !important;
+  margin: 2pt !important;
+  bottom: 2pt !important;
+}
+@media(max-width: 900px) {
+  .additional-buttons {
+    position: fixed;
+    bottom: 5pt;
+    right: 0pt;
+    z-index: 9999;
+  }
+}
