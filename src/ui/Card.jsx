@@ -1,6 +1,6 @@
 import { cn } from '../lib/utils'
 
-export default function ({
+export function Card ({
   title,
   className,
   children,

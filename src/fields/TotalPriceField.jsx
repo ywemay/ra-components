@@ -1,6 +1,6 @@
 import { PriceField } from ".";
 
-export default function TotalPriceField(props) {
+export function TotalPriceField(props) {
   return <PriceField
     source="total_price"
     className="flex justify-end"

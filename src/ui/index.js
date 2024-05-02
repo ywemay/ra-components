@@ -1,5 +1,5 @@
-export { default as Card } from './Card'
-export { default as DetailLine } from './DetailLine'
+export * from './Card'
+export * from './DetailLine'
 export * from './Loading'
 export * from './NoData'
 export * from './CardIcon'
