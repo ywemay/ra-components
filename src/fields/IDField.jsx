@@ -1,8 +1,10 @@
-import { TextField, } from "react-admin";
+import { NumberField } from "react-admin";
 
 export function IDField(props) {
-  return <TextField
+  return <NumberField
     source="id"
+    label="common.id"
+    className="flex justify-end"
     {...props}
     />
 }

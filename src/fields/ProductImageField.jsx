@@ -6,10 +6,8 @@ export function ProductImageField({ source, ...props }) {
   if (!record) return null;
   const sku = record[source || 'id'];
   const url = `${host}/product/one/${sku}`
-  return <div>
-    <img 
-      crossOrigin="anonymous"
-      width="120pt" hight="120pt" src={sku ? url : "/no-image.jpg"} 
-      {...props} />
-  </div>
+  return <img 
+    crossOrigin="anonymous"
+    width="120pt" hight="120pt" src={sku ? url : "/no-image.jpg"} 
+    {...props} />
 }

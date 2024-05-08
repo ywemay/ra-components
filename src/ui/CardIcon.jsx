@@ -1,7 +1,7 @@
 export const cardIconSx = { width: 60, height: 60 }
 
 export function CardIconWrapper({children}) {
-  return <div className="hidden md:block p-6 shadow-lg border m-3">
+  return <div className="card-icon hidden md:block p-6 shadow-lg border m-3">
     {children}
   </div>
 }

@@ -1,9 +1,9 @@
 import {
-  Edit,
+  Create,
   useNotify,
 } from "react-admin";
 
-export function EmbededEdit(props) {
+export function EmbeddedCreate(props) {
 
   const { onCreated, children, ...rest } = props
 
@@ -14,9 +14,9 @@ export function EmbededEdit(props) {
     if (typeof onCreated === 'function') onCreated(data.id);
   };
 
-  return <Edit
+  return <Create
     mutationOptions={{ onSuccess }}
     {...rest}>
       {children}
-  </Edit>
+  </Create>
 }

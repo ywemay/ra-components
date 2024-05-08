@@ -1,3 +1,4 @@
+import { Children } from 'react'
 import {
   useTranslate,
   TextField,
@@ -11,11 +12,21 @@ export function DetailLine({children, hidden, label, ...rest}) {
   const t = useTranslate();
   return <div 
     {...rest}
-    className="flex flex-row gap-2 justify-stretch border-b border-b-stone-500">
+    className="detail-line"
+    >
     {label && <div className="w-full">{t(label)}</div>}
     <div className="w-full">
       {children}
     </div>
+  </div>
+}
+
+export function DetailLayout({children, ...params}) {
+  return <div {...params}>
+    {Children.toArray(children).map((child, index) => {
+      const { props } = child;
+      return <DetailLine {...props}>{child}</DetailLine>
+    })}
   </div>
 }
 
