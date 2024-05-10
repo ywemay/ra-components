@@ -1,4 +1,4 @@
-import { doFetch } from '@/lib/fetch';
+import { doFetch } from '../lib/fetch';
 
 const { 
   VITE_OLLAMA_API: API, 

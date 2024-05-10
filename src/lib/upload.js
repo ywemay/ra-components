@@ -1,4 +1,4 @@
-import { httpFilesClient } from '@/utils/http-client';
+import { httpFilesClient } from './http-client';
 
 export const upload = ({uri, file}) => new Promise((resolve, reject) => {
   const body = new FormData();
