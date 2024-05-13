@@ -1,5 +1,0 @@
-export * from './genders'
-export * from './incoterms'
-export * from './packing-types'
-export * from './payments-terms'
-export * from './units'
