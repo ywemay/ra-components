@@ -49,6 +49,7 @@ export function Layout(){
     <t.DetailLayout>
       <TextField label="Marianna" data="intercol" />
     </t.DetailLayout>
+    <t.BoxIcon />
   </div>
 }
 
