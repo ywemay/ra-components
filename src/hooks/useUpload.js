@@ -1,4 +1,4 @@
-import { httpFilesClient } from '../lib';
+import { httpFilesClient } from 'ywemay-ra-utils';
 
 /**
  * Provides upload function to upload files on the file server

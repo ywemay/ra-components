@@ -4,7 +4,7 @@ import RecordIcon from '@mui/icons-material/FiberManualRecord';
 import StopIcon from '@mui/icons-material/Stop';
 import SendIcon from '@mui/icons-material/Send';
 
-export const AudioRecorder = () => {
+export const AudioRecorder = ({url, length}) => {
   const [audioBlob, setAudioBlob] = useState(null);
   const [recording, setRecording] = useState(false);
   const [mediaRecorder, setMediaRecorder] = useState(null);
@@ -33,7 +33,7 @@ export const AudioRecorder = () => {
           recorder.stop();
           setRecording(false);
         }
-      }, 30000); // Record audio for 30 seconds
+      }, length || 30000); // Record audio for 30 seconds
     });
   };
 
@@ -59,7 +59,7 @@ export const AudioRecorder = () => {
       formData.set('audio', ogg, 'speech.ogg');
       formData.append('lang', 'English');
 
-      fetch('http://192.168.0.90:8065/translate_audio', {
+      fetch(url || 'http://localhost/translate_audio', {
         method: 'POST',
         body: formData
       })

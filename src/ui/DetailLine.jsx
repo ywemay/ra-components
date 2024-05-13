@@ -5,7 +5,6 @@ import {
   NumberField,
   DateField,
 } from "react-admin";
-import { PriceField } from "..";
 
 export function DetailLine({children, hidden, label, ...rest}) {
   if (hidden) return <></>
@@ -43,5 +42,4 @@ export function DetailTextField(props) {
 }
 
 export const DetailNumberField = (props) =>  <DetailField element={NumberField} {...props} />
-export const DetailPriceField = (props) =>  <DetailField element={PriceField} {...props} />
 export const DetailDateField = (props) =>  <DetailField element={DateField} {...props} />
