@@ -1,5 +1,5 @@
 import * as t from '../'
-import { Admin, Resource, Datagrid, TextField } from 'react-admin'
+import { Admin, Resource, Datagrid, TextField, SimpleShowLayout } from 'react-admin'
 
 const record = {
   company_name: 'Vasilisa',
@@ -46,10 +46,15 @@ export function Layout(){
     <t.Card>
       Yakhunna mathaha
     </t.Card>
-    <t.DetailLayout>
-      <TextField label="Marianna" data="intercol" />
-    </t.DetailLayout>
+    <SimpleShowLayout record={record}>
+
+      <TextField label="Marianna" source="company_name" />
+      <t.DetailLayout>
+        <t.DetailField element={TextField} source="company_name" label="Shukamaka" />
+      </t.DetailLayout>
+    </SimpleShowLayout>
     <t.BoxIcon />
+    <t.CustomerIcon />
   </div>
 }
 
