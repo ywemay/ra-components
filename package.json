@@ -1,6 +1,6 @@
 {
   "name": "ywemay-ra-erp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "YWEmay React Admin ERP Components",
   "type": "module",
   "main": "src/index.js",
