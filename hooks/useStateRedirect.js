@@ -1,17 +1,15 @@
-import { useLocation } from 'react-router-dom';
-import { useRedirect } from 'react-admin';
+import { useLocation } from 'react-router';
 
-export default function useStateRedirect() {
-  const { redirect: params } = useLocation() || {};
-  const re = useRedirect()
+export default function useStateRedirect({ fallback } = {}) {
+  const { state } = useLocation() || {};
+  console.log('Use Redirect', state)
 
-  const redirect = ({fallback}) => {
-    if (!params) return fallback || 'edit';
-    if (typeof params === 'function') params();
-    else {
-      const { resource, id, action } = params;
-      re(action, resource, id)
-    }
+  const re = () => {
+    if (!state) return fallback || 'edit';
+    const { redirect } = state;
+    if (!redirect.to) return fallback || 'edit';
+    return redirect.to
   }
-  return redirect
+
+  return re
 }
