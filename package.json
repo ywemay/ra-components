@@ -1,6 +1,6 @@
 {
   "name": "ywemay-ra-erp",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "YWEmay React Admin ERP Components",
   "type": "module",
   "main": "src/index.js",
@@ -28,6 +28,8 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.3",
     "react-is": "^18.3.1",
+    "react-router": "^6.23.1",
+    "react-router-dom": "^6.23.1",
     "ywemay-erp-choices": "^1.0.0",
     "ywemay-ra-utils": "^1.0.3"
   }
